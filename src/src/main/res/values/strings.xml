@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Floating Calculator</string>
+
+    <!-- Calculator field -->
+    <string name="formula_divide_by_zero_error">Can\'t divide by zero</string>
+    <string name="float_calculator">Float Calculator</string>
+    <string name="choose_theme">Choose theme</string>
+
+
+</resources>

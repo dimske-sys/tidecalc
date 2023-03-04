@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_round">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:textColor="?android:attr/colorBackground"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Choose theme"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/themeGroup">
+        <RadioButton
+            android:id="@+id/Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/checkmark"
+            android:fontFamily="sans-serif-light"
+            android:padding="10dp"
+            android:text="Light mode"
+            android:textColor="?android:attr/colorBackground"
+            android:textSize="18sp" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Dark"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="?android:attr/colorBackground"
+            android:button="@drawable/checkmark"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="Dark mode"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="?android:attr/colorBackground"
+            android:text="Cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+        <Button
+            android:id="@+id/Ok"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="?android:attr/colorBackground"
+            android:text="Ok"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+</LinearLayout>
